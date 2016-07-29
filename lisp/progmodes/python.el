@@ -3258,7 +3258,7 @@ def __PYTHON_EL_get_completions(text):
   :group 'python)
 
 (defcustom python-shell-completion-string-code
-  "';'.join(__PYTHON_EL_get_completions('''%s'''))"
+  "print(';'.join(__PYTHON_EL_get_completions('''%s''')))"
   "Python code used to get a string of completions separated by semicolons.
 The string passed to the function is the current python name or
 the full statement in the case of imports."
